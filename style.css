@@ -9,6 +9,7 @@
     --main-background: #0f172a;
     --text-color:#99f6e4;
     --nav-background: #06b6d456;
+    --a-hover:#c026d3;
 }
 
 body {
@@ -33,5 +34,19 @@ nav {
 
 ul, li {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-background);
+    font-weight: bolder;
+
+}
+
+:hover a {
+    display: block;
+     color: var(--a-hover);
+     transform: scale(1.1);
+     transition: transform .3s;
 }
 
